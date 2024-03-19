@@ -22,6 +22,11 @@
           @click="$q.dark.toggle()"
         />
         <!-- dark_mode -->
+        <q-btn round size="sm" class="g-ml-md" to="/profile">
+          <q-avatar size="42px">
+            <img src="https://cdn.quasar.dev/img/avatar2.jpg" />
+          </q-avatar>
+        </q-btn>
       </q-toolbar>
     </q-header>
 
@@ -86,12 +91,12 @@ const linksList = [
     icon: 'school',
     to: '/flex-grid-1',
   },
-  {
-    title: 'Flex Grid 2',
-    caption: 'quasar.dev',
-    icon: 'school',
-    to: '/flex-grid-2',
-  },
+  // {
+  //   title: 'Flex Grid 2',
+  //   caption: 'quasar.dev',
+  //   icon: 'school',
+  //   to: '/flex-grid-2',
+  // },
 ];
 </script>
 
