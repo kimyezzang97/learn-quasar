@@ -1,20 +1,20 @@
 <template>
-  <q-item clickable tag="a" target="_blank" :href="props.link">
-    <q-item-section v-if="props.icon" avatar>
-      <q-icon :name="props.icon" />
+  <q-item clickable tag="a" :to="to">
+    <q-item-section v-if="icon" avatar>
+      <q-icon :name="icon" />
     </q-item-section>
 
     <q-item-section>
-      <q-item-label>{{ props.title }}</q-item-label>
-      <q-item-label caption>{{ props.caption }}</q-item-label>
+      <q-item-label>{{ title }}</q-item-label>
+      <q-item-label caption>{{ caption }}</q-item-label>
     </q-item-section>
   </q-item>
 </template>
 
 <script setup>
-defineOptions({
-  name: 'EssentialLink',
-});
+// defineOptions({
+//   name: 'EssentialLink',
+// });
 
 const props = defineProps({
   title: {
@@ -27,7 +27,7 @@ const props = defineProps({
     default: '',
   },
 
-  link: {
+  to: {
     type: String,
     default: '#',
   },
