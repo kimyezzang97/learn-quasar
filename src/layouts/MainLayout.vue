@@ -13,6 +13,7 @@
 
         <q-toolbar-title> Quasar App </q-toolbar-title>
 
+        <q-btn stretch flat label="Sub Layout" to="/sub" />
         <q-btn
           flat
           round
