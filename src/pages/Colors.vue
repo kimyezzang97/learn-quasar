@@ -3,18 +3,20 @@
     <section class="q-mb-xl">
       <div class="text-h4">Headings</div>
       <q-separator class="q-my-md" />
-      <div class="bg-primary text-yellow">primary</div>
-      <div class="bg-secondary text-white">secondary</div>
-      <div class="bg-accent text-white">accent</div>
-      <div class="bg-dark text-white">dark</div>
-      <div class="bg-positive text-white">positive</div>
-      <div class="bg-negative text-white">negative</div>
-      <div class="bg-info text-white">info</div>
-      <div class="bg-warning text-white">warning</div>
-      <div class="bg-orange-4">orange-4</div>
-      <div class="bg-light-green-6">light-green-6</div>
-      <div class="bg-blue-grey-1">blue-grey-1</div>
-      <div class="bg-error">error</div>
+      <div class="q-pa-xs rounded-borders bg-primary text-yellow">primary</div>
+      <div class="q-pa-xs rounded-borders bg-secondary text-white">
+        secondary
+      </div>
+      <div class="q-pa-xs rounded-borders bg-accent text-white">accent</div>
+      <div class="q-pa-xs rounded-borders bg-dark text-white">dark</div>
+      <div class="q-pa-xs rounded-borders bg-positive text-white">positive</div>
+      <div class="q-pa-xs rounded-borders bg-negative text-white">negative</div>
+      <div class="q-pa-xs rounded-borders bg-info text-white">info</div>
+      <div class="q-pa-xs rounded-borders bg-warning text-white">warning</div>
+      <div class="q-pa-xs rounded-borders bg-orange-4">orange-4</div>
+      <div class="q-pa-xs rounded-borders bg-light-green-6">light-green-6</div>
+      <div class="q-pa-xs rounded-borders bg-blue-grey-1">blue-grey-1</div>
+      <div class="q-pa-xs rounded-borders bg-error">error</div>
       <p>Variables</p>
     </section>
     <section class="q-mb-xl">
