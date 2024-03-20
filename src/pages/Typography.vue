@@ -53,12 +53,20 @@
   </q-page>
 </template>
 
-<!-- <script>
-  export default{
-    name: 'TypographyComp',
-  };
-</script> -->
+<script>
+import { useMeta } from 'quasar';
 
-<script setup></script>
+const metaData = {
+  title: 'Typography',
+  meta: {
+    description: { name: 'description', content: 'YEZZANG Quasar 공부' },
+    keywords: { name: 'keywords', content: '김예짱, Quasar 공부' },
+  },
+};
+</script>
+
+<script setup>
+useMeta(metaData);
+</script>
 
 <style lang="scss" scoped></style>
