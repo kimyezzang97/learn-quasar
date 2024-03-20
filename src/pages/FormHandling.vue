@@ -93,6 +93,9 @@
 
 <script setup>
 import { ref } from 'vue';
+import { useQuasar } from 'quasar';
+
+const $q = useQuasar();
 
 const myForm = ref(null);
 const form = ref({
@@ -124,9 +127,19 @@ const reset = () => {
 const onSubmit = () => {
   if (form.value.accept !== true) {
     alert('동의 해주세요!!!');
-  } else {
-    alert('성공~!');
+    return;
   }
+  // $q.loading.show({
+  //   delay: 400,
+  //   message: '로딩중',
+  //   spinnerSize: 40,
+  // });
+  $q.loading.show();
+  setTimeout(() => {
+    $q.loading.hide();
+    alert('성공~!');
+  }, 3000);
+  //alert('성공~!');
 };
 const onReset = () => {
   form.value.title = '';

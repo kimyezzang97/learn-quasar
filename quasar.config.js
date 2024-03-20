@@ -102,7 +102,14 @@ module.exports = configure(function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: [],
+      plugins: ["Loading"],
+      config: {
+        loading: {
+          delay: 0,
+          message: "로딩중~!!",
+          spinnerSize: 40,
+        },
+      },
     },
 
     // animations: 'all', // --- includes all animations
